@@ -5,13 +5,13 @@ import Navbar from "../components/Navbar";
 const Index = () => {
   return (
     <>
-      {/*<MainLayout>*/}
-      <Navbar/>
+      <MainLayout>
+      {/*<Navbar/>*/}
         <div className="center">
           <h1>Better than SoundCloud</h1>
           <h3>Here u can get the best tacks!</h3>
         </div>
-      {/*</MainLayout>*/}
+      </MainLayout>
 
       <style jsx>
         {`

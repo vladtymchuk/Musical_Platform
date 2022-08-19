@@ -10,7 +10,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { AppBar, Drawer, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import { router } from "next/client";
+import { useRouter } from "next/router";
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -27,6 +27,7 @@ export default function Navbar() {
     bottom: false,
     right: false,
   });
+  const router = useRouter();
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -81,7 +82,7 @@ export default function Navbar() {
                   <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  News
+                  BetterThanYou
                 </Typography>
                 <Button color="inherit">Login</Button>
               </Toolbar>
